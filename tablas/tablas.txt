@@ -1,0 +1,19 @@
+CREATE TABLE `saldo_punto` (
+  `id` int(10) NOT NULL auto_increment,
+  `usuario` varchar(200) NOT NULL,
+  `fecha` varchar(100) NOT NULL,
+  `saldo` varchar(100) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+
+CREATE TABLE `historico_devolu` (
+  `id` int(10) NOT NULL auto_increment,
+  `tarjeta` varchar(100) NOT NULL,
+  `local` varchar(100) NOT NULL,
+  `factura` varchar(50) NOT NULL,
+  `fecha_devo` datetime NOT NULL,
+  `fecha_ingreso` datetime NOT NULL,
+  `cantidad` double NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
